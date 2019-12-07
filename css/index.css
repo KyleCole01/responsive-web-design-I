@@ -111,7 +111,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* display: inline-block; */
     background-color: azure;
     padding-bottom: 120px;
 }
@@ -148,7 +147,6 @@ a:hover {
     display: flex;
     margin: 0 auto;
     align-items: center;
-    /* text-align: center; */
     width: 100vw;
 }
 
@@ -189,4 +187,68 @@ a:hover {
     background-color: azure;
     padding: 60px;
 }
+/* Starting point for responsive media queries */
 
+@media(max-width: 800px) {
+    .logo-top {
+        display: flex;
+        margin: 1% auto;
+    }
+    .logo {
+        display: none;
+    }
+    .nav {
+        justify-content: space-evenly;
+    }
+    .intro-right {
+        display: none;
+    }
+    .intro-left {
+        margin: 10% auto;
+    }
+    .service-img {
+        margin-top: 20%;
+    }
+    .middle-image{
+        margin:10% 0;
+    }
+    .bottom{
+        margin-bottom: 20%;
+    }
+}
+
+@media(max-width: 500px) {
+    body{
+        width:100%;
+    }
+    .navbar{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+        position:relative;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .navitem{
+        width:100%;
+        text-align: center;
+        border:1px black solid;
+    }
+    .intro{
+        width:90%;
+        text-align: center;
+    }
+    .intro-left{
+        width:100%;
+        margin:0 auto;
+    }
+   .middle-top div{
+    display:flex;
+    flex-direction: column ;
+    
+   }
+}
